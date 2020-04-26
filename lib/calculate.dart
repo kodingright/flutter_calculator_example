@@ -1,5 +1,4 @@
 class Compute {
-  // static final RegExp regex = RegExp(r'[+-*\/]');
   static String str = '0';
 
   static void add(String val) {

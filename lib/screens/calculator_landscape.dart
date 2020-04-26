@@ -37,6 +37,15 @@ class _CalculateLandscape extends State<CalculateLandscape> {
     });
   }
 
+  void compute(){
+    if(Compute.str.compareTo('0') != 0){
+      setState(() {
+        this._str = Compute.compute();
+        Compute.str = this._str;
+      });
+    }
+  }
+
   @override
   void initState() {
     super.initState();
